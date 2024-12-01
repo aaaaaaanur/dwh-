@@ -14,26 +14,20 @@ func Random() (int, int, int, int) {
 
 	for {
 		x1 = rand.Intn(10)
-		if x1 != 0 {
-			break
+		if x1 == 0 {
+			continue
 		}
-	}
 
-	for {
 		x2 = rand.Intn(10)
-		if x2 != x1 {
-			break
+		if x2 == x1 {
+			continue
 		}
-	}
 
-	for {
 		x3 = rand.Intn(10)
-		if x3 != x1 && x3 != x2 {
-			break
+		if x3 == x1 || x3 == x2 {
+			continue
 		}
-	}
 
-	for {
 		x4 = rand.Intn(10)
 		if x4 != x1 && x4 != x2 && x4 != x3 {
 			break
