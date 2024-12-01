@@ -36,13 +36,17 @@ func Play() {
 			ui.ErrorMess1()
 			continue
 		}
+		if a1 == a2 || a1 == a3 || a1 == a4 || a2 == a3 || a2 == a4 || a3 == a4 {
+			ui.ErrorMess1()
+			continue
+		}
 
 		sliceA := []int{a1, a2, a3, a4}
 		sliceX := []int{x1, x2, x3, x4}
 
 		if a1 == x1 && a2 == x2 && a3 == x3 && a4 == x4 {
 			ui.WinMess()
-			break
+			return
 		}
 
 		count1 = 0
@@ -75,4 +79,5 @@ func Play() {
 		ui.BullsCowsMess(count1, count2)
 		continue
 	}
+	return
 }

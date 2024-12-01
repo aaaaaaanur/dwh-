@@ -1,6 +1,8 @@
 package ui
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func HelloMess() {
 	fmt.Println("Хочешь сыграть в игру \"Быки и коровы\"? (Если да, ответь \"y\", а если нет - \"n\")")
@@ -55,6 +57,4 @@ func BullsCowsMess(b, c int) {
 func WinMess() {
 	fmt.Println("Урааа, ты отгадал число!\nХочешь сыграть ещё раз? (Если да, ответь \"y\", а если нет - \"n\")")
 	fmt.Print("->")
-
-	ui.ReadString()
 }
