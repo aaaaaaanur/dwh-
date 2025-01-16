@@ -214,7 +214,7 @@ func main() {
 			//
 			//fmt.Println("Введите borrowed:")
 			//fmt.Print("-> ")
-			//
+
 			//book.Borrowed, err = readInt()
 			//if err != nil {
 			//	log.Fatal(err)
